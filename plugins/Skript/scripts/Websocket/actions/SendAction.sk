@@ -1,0 +1,49 @@
+import:
+  ch.njol.skript.variables.Variables
+
+effect send action %string% through %object% [with arguments %-objects%] and store it in %string%:
+  trigger:
+    delay the effect
+
+    set {_websocket} to expr-2
+
+    # Preparing action
+    set {_json::id} to "%random integer between 0000 and 9999%"
+    set {_json::function} to expr-1
+
+    if expr-4 is set:
+      set {_json::arguments::*} to expr-3
+      set {_return} to expr-4
+    else:
+      set {_return} to expr-3
+
+    set {_json} to json form of {_json::*}
+
+    # Making request
+    websocket send {_json} through {_websocket}
+
+    set {_timeout} to 5
+
+    # Waiting for response
+    while true is true:
+      if {websocket::usersService::%{_json::id}%::response::*} is set:
+        # Setting response
+
+        loop {websocket::usersService::%{_json::id}%::response::*}:
+          Variables.setVariable("%{_return}%::%loop-index%", loop-value)
+        
+        continue
+        stop
+
+      reduce {_timeout} by 0.05
+      if {_timeout} <= 0:
+        continue
+        stop
+
+      wait 1 tick
+
+command test:
+  trigger:
+    set {_response} to "%random integer between 0000 and 9999%"
+    send action "createAuthToken" through {websocket::usersService} and store it in {_response}
+    broadcast "after delay %{%{_response}%::isAuthorized}%"

@@ -1,0 +1,52 @@
+function Region_tryClaiming(player: player, location: location):
+  # Claiming this region as first
+  if size of {regions::%{_player}%::*} <= 0:
+    loop all blocks in radius 1.5 around {_location}:
+      set {_check::block} to location of loop-block
+      set {_check::block}'s y coordinate to 0
+
+      if {block::%{_check::block}%::type} is "water":
+        set {_watered} to true
+        exit 1 loop
+
+    if {_watered} is not true:
+      send title "Ошибка" with subtitle "Вы можете захватить територию только возле воды" to {_player} for 2 seconds with fade in 0 ticks and fade out 2 ticks
+      stop
+
+    # Claiming this region
+    Region_claim({_player}, {_location})
+  else:
+    # Checking if player can claim this region
+    loop all blocks in radius 1.25 around {_location}:
+      set {_check::block} to location of loop-block
+      set {_check::block}'s y coordinate to 0
+
+      if {region::%{_check::block}%} is set:
+        {region::%{_check::bock}%::owner} is {_player}:
+
+        # Checking if we can claim this land using this region
+        set {_canClaim} to true
+    
+    if {_canClaim} is true:
+      # Checking if this region is other-player's
+      if {region::%{_location}%} is set:
+        {region::%{_location}%::owner} isn't {_player}
+
+        stop
+
+      # Just claiming this area
+      Region_claim({_player}, {_location})
+    else:
+      send "no claim" to {_player}
+
+function Region_claim(player: player, location: location):
+  # Claiming this region as this player's
+  if {regions::%{_player}%::*} doesn't contain {_location}:
+    add {_location} to {regions::%{_player}%::*}
+
+  # Region settings
+  set {region::%{_location}%} to true
+  set {region::%{_location}%::owner} to {_player}
+
+  # Region worker
+  Region_startWorker({_location})

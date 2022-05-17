@@ -1,0 +1,6 @@
+function Region_getAllBlocks() :: items:
+  return red wool, yellow wool, purple wool, cyan wool, light blue wool, pink wool
+
+function Region_getAvailableBlock() :: item:
+  set {_block} to random element of Region_getAllBlocks()
+  return {_block}

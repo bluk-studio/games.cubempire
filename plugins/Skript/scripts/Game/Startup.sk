@@ -1,0 +1,33 @@
+on script load:
+  wait 1 second
+
+  # Generating game data
+  set {game::seed} to random integer between 0 and 9999
+
+  # Generating map
+  Generator_loadTile(0, 0)
+  Generator_loadTile(-1, 0)
+  Generator_loadTile(0, -1)
+  Generator_loadTile(-1, -1)
+
+  # Starting game worker
+  Game_startWorker()
+
+on script unload:
+  # Stopping game worker
+  set {game::action} to "stop"
+
+  delete {block::*}
+  delete {region::*}
+  delete {regions::*}
+
+  # Deleting all bounds
+  loop all bounds:
+    # Clearing this bound's blocks
+    loop all blocks within loop-bound:
+      set loop-block to air
+
+    if id of loop-bound contains "game":
+      delete loop-bound
+
+    wait 1 tick

@@ -1,0 +1,25 @@
+function Region_startWorker(location: location):
+  # Getting region information
+  set {_owner} to {region::%{_location}%::owner}
+  if {_owner} is not set:
+    stop
+
+  # Starting worker
+  while true is true:
+    # Logistics
+    # > Power
+
+    # Player holograms
+
+    # Block claimed effects
+    {region::%{_location}%} is set:
+      {region::%{_location}%::owner} is {_owner}:
+        # Placing block
+        set block at {block::%{_location}%::blockLocation} to {player::%{_owner}%::choosedBlock}
+      else:
+        stop
+    else:
+      # Stopping worker
+      stop
+
+    wait 1 tick

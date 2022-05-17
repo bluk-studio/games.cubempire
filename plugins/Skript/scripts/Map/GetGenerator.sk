@@ -1,0 +1,12 @@
+function Generator_get(seed: number) :: Object:
+  set {_generator} to new perlin generator with seed {_seed}
+
+  # Settings
+  set frequency of {_generator} to 0.08
+
+  set fractal type of {_generator} to FBm
+  set octave count of {_generator} to 3
+  set lacunarity of {_generator} to 2
+  set weighted strength of {_generator} to 0.25
+
+  return {_generator}

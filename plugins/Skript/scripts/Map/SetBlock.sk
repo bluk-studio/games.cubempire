@@ -1,0 +1,54 @@
+function Generator_setBlock(location: location, tile: string):
+  # Settings
+  if y coordinate of {_location} < 0:
+    set block at {_location} to blue concrete
+
+    # Water block type
+    set {_block::location} to location of block at {_location}
+    set {_block::location}'s y coordinate to 0
+    
+    set {block::%{_block::location}%::type} to "water"
+  else:
+    set block at {_location} to random element of light green concrete, green concrete
+    
+    # Grass block type
+    set {_block::location} to location of block at {_location}
+    set {_block::location}'s y coordinate to 0
+    
+    set {block::%{_block::location}%::type} to "grass"
+    set {block::%{_block::location}%::blockLocation} to {_location}
+
+    # Randomized Power, needed to attack this land
+    set {block::%{_block::location}%::powerNeeded} to random integer between 1 and 5 
+
+    # Mountains
+    if y coordinate of {_location} > 0.2:
+      set {_y} to y coordinate of {_location}
+      set {_location} to block below {_location}
+
+      while {_y} > 0:
+        set block at {_location} to gray concrete
+        
+        # Item type
+        set {_block::location} to location of block at {_location}
+        set {_block::location}'s y coordinate to 0
+            
+        set {block::%{_block::location}%::type} to "stone"
+        set {block::%{_block::location}%::blockLocation} to {_location}
+        set {block::%{_block::location}%::powerNeeded} to random integer between 1 and 5 
+
+        if {_y} <= 0.1:
+          # Different chance of ore spawning...
+          chance of 20%:
+            set block at {_location} to white concrete
+            
+            # Iron ore block type
+            set {_block::location} to location of block at {_location}
+            set {_block::location}'s y coordinate to 0
+
+            set {block::%{_block::location}%::type} to "iron_ore"
+            set {block::%{_block::location}%::blockLocation} to {_location}
+            set {block::%{_block::location}%::powerNeeded} to random integer between 1 and 5 
+        
+        set {_location} to block above {_location}
+        reduce {_y} by 0.1

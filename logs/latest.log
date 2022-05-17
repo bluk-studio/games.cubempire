@@ -1,0 +1,327 @@
+[14:22:14] [ServerMain/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[14:22:20] [Worker-Main-1/INFO]: Loaded 7 recipes
+[14:22:23] [Server thread/INFO]: Starting minecraft server version 1.18.2
+[14:22:23] [Server thread/INFO]: Loading properties
+[14:22:23] [Server thread/INFO]: This server is running Paper version git-Paper-318 (MC: 1.18.2) (Implementing API version 1.18.2-R0.1-SNAPSHOT) (Git: 2ab0258)
+[14:22:24] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[14:22:24] [Server thread/INFO]: Using 4 threads for Netty based IO
+[14:22:24] [Server thread/INFO]: Default game type: SURVIVAL
+[14:22:24] [Server thread/INFO]: Generating keypair
+[14:22:24] [Server thread/INFO]: Starting Minecraft server on *:25565
+[14:22:25] [Server thread/INFO]: Using default channel type
+[14:22:25] [Server thread/INFO]: Paper: Using Java 11 compression from Velocity.
+[14:22:25] [Server thread/INFO]: Paper: Using Java cipher from Velocity.
+[14:22:27] [Server thread/ERROR]: [STDERR] [org.bukkit.craftbukkit.v1_18_R2.legacy.CraftLegacy] Initializing Legacy Material Support. Unless you have legacy plugins and/or data this is a bug!
+[14:22:37] [Server thread/WARN]: Legacy plugin SkriptJSON v1.0.0 does not specify an api-version.
+[14:22:37] [Server thread/WARN]: Legacy plugin WebSKT v1.0-BETA.2 does not specify an api-version.
+[14:22:38] [Server thread/INFO]: [FastAsyncWorldEdit] Loading FastAsyncWorldEdit v2.1.3-SNAPSHOT-168;210ee9f
+[14:22:40] [Server thread/INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@13dbdfa7]
+[14:22:40] [Server thread/INFO]: [Skript] Loading Skript v2.6.1
+[14:22:40] [Server thread/INFO]: [SkBee] Loading SkBee v1.15.2
+[14:22:40] [Server thread/INFO]: [skript-reflect] Loading skript-reflect v2.3
+[14:22:40] [Server thread/INFO]: [ViaVersion] Loading ViaVersion v4.2.1
+[14:22:40] [Server thread/INFO]: [ViaVersion] ViaVersion 4.2.1 is now loaded, injecting!
+[14:22:40] [Via-Mappingloader-0/INFO]: [ViaVersion] Loading 1.12 -> 1.13 mappings...
+[14:22:41] [Server thread/INFO]: [SkriptJSON] Loading SkriptJSON v1.0.0
+[14:22:41] [Server thread/INFO]: [WebSKT] Loading WebSKT v1.0-BETA.2
+[14:22:41] [Server thread/INFO]: [ViaBackwards] Loading ViaBackwards v4.2.1
+[14:22:41] [Via-Mappingloader-1/INFO]: [ViaVersion] Loading 1.13 -> 1.13.2 mappings...
+[14:22:41] [Via-Mappingloader-2/INFO]: [ViaVersion] Loading 1.13.2 -> 1.14 mappings...
+[14:22:41] [Via-Mappingloader-3/INFO]: [ViaVersion] Loading 1.14 -> 1.15 mappings...
+[14:22:41] [Via-Mappingloader-4/INFO]: [ViaVersion] Loading 1.15 -> 1.16 mappings...
+[14:22:41] [Via-Mappingloader-5/INFO]: [ViaVersion] Loading 1.16 -> 1.16.2 mappings...
+[14:22:41] [Via-Mappingloader-6/INFO]: [ViaVersion] Loading 1.16.2 -> 1.17 mappings...
+[14:22:41] [Via-Mappingloader-7/INFO]: [ViaVersion] Loading 1.17 -> 1.18 mappings...
+[14:22:41] [Server thread/INFO]: [ViaBackwards] Loading translations...
+[14:22:41] [Via-Mappingloader-9/INFO]: [ViaBackwards] Loading 1.11 -> 1.10 mappings...
+[14:22:41] [Via-Mappingloader-8/INFO]: [ViaBackwards] Loading 1.10 -> 1.9.4 mappings...
+[14:22:42] [Via-Mappingloader-10/INFO]: [ViaBackwards] Loading 1.12 -> 1.11 mappings...
+[14:22:42] [Via-Mappingloader-10/INFO]: [ViaBackwards] Loading 1.15 -> 1.14 mappings...
+[14:22:42] [Via-Mappingloader-3/INFO]: [ViaBackwards] Loading 1.13.2 -> 1.13 mappings...
+[14:22:42] [Via-Mappingloader-7/INFO]: [ViaBackwards] Loading 1.16 -> 1.15 mappings...
+[14:22:42] [Via-Mappingloader-4/INFO]: [ViaBackwards] Loading 1.14 -> 1.13.2 mappings...
+[14:22:42] [Via-Mappingloader-2/INFO]: [ViaBackwards] Loading 1.17 -> 1.16.2 mappings...
+[14:22:42] [Via-Mappingloader-0/INFO]: [ViaVersion] Loading block connection mappings ...
+[14:22:42] [Via-Mappingloader-6/INFO]: [ViaBackwards] Loading 1.16.2 -> 1.16 mappings...
+[14:22:42] [Via-Mappingloader-5/INFO]: [ViaBackwards] Loading 1.18 -> 1.17 mappings...
+[14:22:42] [Server thread/INFO]: [ProtocolLib] Loading ProtocolLib v4.8.0
+[14:22:44] [Via-Mappingloader-7/INFO]: [ViaBackwards] Loading 1.13 -> 1.12 mappings...
+[14:22:46] [Server thread/INFO]: [skNoise] Loading skNoise v1.0
+[14:22:46] [Server thread/INFO]: [skript-yaml] Loading skript-yaml v1.4
+[14:22:46] [Server thread/INFO]: [skRayFall] Loading skRayFall v1.9.27
+[14:22:46] [Server thread/INFO]: [WorldChangeScreenRemover] Loading WorldChangeScreenRemover v1.0.18
+[14:22:46] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[14:22:46] [Server thread/INFO]: [FastAsyncWorldEdit] Enabling FastAsyncWorldEdit v2.1.3-SNAPSHOT-168;210ee9f
+[14:22:46] [Server thread/INFO]: [com.fastasyncworldedit.core.Fawe] LZ4 Compression Binding loaded successfully
+[14:22:46] [Server thread/INFO]: [com.fastasyncworldedit.core.Fawe] ZSTD Compression Binding loaded successfully
+[14:22:46] [Server thread/INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
+[14:22:47] [Server thread/INFO]: WEPIF: Using the Bukkit Permissions API.
+[14:22:47] [Server thread/INFO]: Using com.sk89q.worldedit.bukkit.adapter.impl.fawe.v1_18_R2.PaperweightFaweAdapter as the Bukkit adapter
+[14:22:51] [Server thread/WARN]: [com.fastasyncworldedit.core.util.UpdateNotification] An update for FastAsyncWorldEdit is available. You are 10 build(s) out of date.
+You are running build 168, the latest version is build 178.
+Update at https://www.spigotmc.org/resources/13932/
+[14:22:51] [Server thread/INFO]: [ProtocolLib] Enabling ProtocolLib v4.8.0
+[14:22:51] [Server thread/INFO]: [ProtocolLib] Started structure compiler thread.
+[14:22:51] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[14:22:51] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[14:22:51] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[14:22:51] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[14:22:51] [Server thread/INFO]: Preparing level "world"
+[14:23:02] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[14:23:02] [Server thread/INFO]: Time elapsed: 725 ms
+[14:23:02] [Server thread/INFO]: [Skript] Enabling Skript v2.6.1
+[14:23:03] [ForkJoinPool.commonPool-worker-1/INFO]: [Skript] You're currently running the latest stable version of Skript.
+[14:23:20] [Server thread/INFO]: [Skript] Loaded 143127 aliases in 16535ms
+[14:23:21] [Server thread/INFO]: [Skript]  ~ created by & © Peter Güttinger aka Njol ~
+[14:23:21] [Server thread/INFO]: [SkBee] Enabling SkBee v1.15.2
+[14:23:21] [Server thread/INFO]: [SkBee] Loading NBTApi...
+[14:23:21] [Server thread/INFO]: [SkBee] [NBTAPI] Found Spigot: v1_18_R2! Trying to find NMS support
+[14:23:21] [Server thread/INFO]: [SkBee] [NBTAPI] NMS support 'MC1_18_R2' loaded!
+[14:23:21] [Server thread/INFO]: [SkBee] [NBTAPI] Found Gson: class com.google.gson.Gson
+[14:23:21] [Server thread/INFO]: [SkBee] Successfully loaded NBTApi!
+[14:23:21] [Server thread/INFO]: [SkBee] NBT Elements successfully loaded
+[14:23:21] [Server thread/INFO]: [SkBee] Recipe Elements successfully loaded
+[14:23:21] [Server thread/INFO]: [SkBee] Scoreboard Elements successfully loaded
+[14:23:21] [Server thread/INFO]: [SkBee] Bound Elements successfully loaded
+[14:23:21] [Server thread/INFO]: [SkBee] Text Component Elements successfully loaded
+[14:23:21] [Server thread/INFO]: [SkBee] Pathfinding Elements successfully loaded
+[14:23:21] [Server thread/INFO]: [SkBee] New Structure Elements successfully loaded
+[14:23:21] [Server thread/INFO]: [SkBee] Old Structure Elements DISABLED!
+[14:23:21] [Server thread/INFO]: [SkBee]  - Old structure system is no longer available on MC 1.18+
+[14:23:21] [Server thread/INFO]: [SkBee]  - Please use new structure system
+[14:23:22] [Server thread/INFO]: [SkBee] Other Elements successfully loaded
+[14:23:22] [Server thread/INFO]: [SkBee] Virtual Furnace Elements disabled via config
+[14:23:22] [Server thread/INFO]: [SkBee] World Creator Elements successfully loaded
+[14:23:22] [Server thread/INFO]: [SkBee] Game Event Elements successfully loaded
+[14:23:22] [Server thread/INFO]: [SkBee] Successfully enabled v1.15.2 in 0,65 seconds
+[14:23:22] [Server thread/INFO]: [SkBee] Loading custom worlds...
+[14:23:22] [Server thread/INFO]: Preparing start region for dimension minecraft:lobby
+[14:23:22] [Server thread/INFO]: Preparing spawn area: 0%
+[14:23:22] [Server thread/INFO]: Time elapsed: 481 ms
+[14:23:25] [Server thread/INFO]: Preparing start region for dimension minecraft:game
+[14:23:25] [Server thread/INFO]: Time elapsed: 504 ms
+[14:23:26] [Server thread/INFO]: [SkBee] Successfully loaded 2 custom worlds
+[14:23:26] [Server thread/INFO]: [skript-reflect] Enabling skript-reflect v2.3
+[14:23:26] [Server thread/INFO]: [ViaVersion] Enabling ViaVersion v4.2.1
+[14:23:26] [Server thread/INFO]: [SkriptJSON] Enabling SkriptJSON v1.0.0*
+[14:23:26] [Server thread/INFO]: [WebSKT] Enabling WebSKT v1.0-BETA.2*
+[14:23:26] [Server thread/WARN]: java.lang.IllegalArgumentException: Cannot find net.minecraft.server.v1_18_R2.DedicatedPlayerList
+[14:23:26] [Server thread/WARN]: 	at WebSKT 1.0-BETA.2.jar//us.tlatoani.webskt.core.reflection.Reflection.getCanonicalClass(Reflection.java:413)
+[14:23:26] [Server thread/WARN]: 	at WebSKT 1.0-BETA.2.jar//us.tlatoani.webskt.core.reflection.Reflection.getMinecraftClass(Reflection.java:390)
+[14:23:26] [Server thread/WARN]: 	at WebSKT 1.0-BETA.2.jar//us.tlatoani.webskt.core.reflection.Reflection.<clinit>(Reflection.java:38)
+[14:23:26] [Server thread/WARN]: 	at WebSKT 1.0-BETA.2.jar//us.tlatoani.webskt.core.reflective_registration.ModifiableSyntaxElementInfo.<clinit>(ModifiableSyntaxElementInfo.java:13)
+[14:23:26] [Server thread/WARN]: 	at WebSKT 1.0-BETA.2.jar//us.tlatoani.webskt.core.registration_enum.ExprEnumValues.<clinit>(ExprEnumValues.java:20)
+[14:23:26] [Server thread/WARN]: 	at WebSKT 1.0-BETA.2.jar//us.tlatoani.webskt.core.registration_enum.EnumClassInfo.registerEnum(EnumClassInfo.java:29)
+[14:23:26] [Server thread/WARN]: 	at WebSKT 1.0-BETA.2.jar//us.tlatoani.webskt.WebSKT.loadSyntaxes(WebSKT.java:91)
+[14:23:26] [Server thread/WARN]: 	at WebSKT 1.0-BETA.2.jar//us.tlatoani.webskt.WebSKT.onEnable(WebSKT.java:61)
+[14:23:26] [Server thread/WARN]: 	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:264)
+[14:23:26] [Server thread/WARN]: 	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:370)
+[14:23:26] [Server thread/WARN]: 	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:541)
+[14:23:26] [Server thread/WARN]: 	at org.bukkit.craftbukkit.v1_18_R2.CraftServer.enablePlugin(CraftServer.java:560)
+[14:23:26] [Server thread/WARN]: 	at org.bukkit.craftbukkit.v1_18_R2.CraftServer.enablePlugins(CraftServer.java:474)
+[14:23:26] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.loadWorld0(MinecraftServer.java:664)
+[14:23:26] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.loadLevel(MinecraftServer.java:431)
+[14:23:26] [Server thread/WARN]: 	at net.minecraft.server.dedicated.DedicatedServer.e(DedicatedServer.java:316)
+[14:23:26] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.w(MinecraftServer.java:1163)
+[14:23:26] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:315)
+[14:23:26] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:833)
+[14:23:26] [Server thread/WARN]: Caused by: java.lang.ClassNotFoundException: net.minecraft.server.v1_18_R2.DedicatedPlayerList
+[14:23:26] [Server thread/WARN]: 	at org.bukkit.plugin.java.PluginClassLoader.loadClass0(PluginClassLoader.java:151)
+[14:23:26] [Server thread/WARN]: 	at org.bukkit.plugin.java.PluginClassLoader.loadClass(PluginClassLoader.java:103)
+[14:23:26] [Server thread/WARN]: 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+[14:23:26] [Server thread/WARN]: 	at java.base/java.lang.Class.forName0(Native Method)
+[14:23:26] [Server thread/WARN]: 	at java.base/java.lang.Class.forName(Class.java:375)
+[14:23:26] [Server thread/WARN]: 	at WebSKT 1.0-BETA.2.jar//us.tlatoani.webskt.core.reflection.Reflection.getCanonicalClass(Reflection.java:411)
+[14:23:26] [Server thread/WARN]: 	... 18 more
+[14:23:26] [Server thread/INFO]: [ViaBackwards] Enabling ViaBackwards v4.2.1
+[14:23:26] [Server thread/INFO]: [skNoise] Enabling skNoise v1.0
+[14:23:26] [Server thread/INFO]: §e[SkNoise] §f§eAttempting to register addon §b[1/5]
+[14:23:26] [Server thread/INFO]: §e[SkNoise] §f§aRegistered addon successfully §b[2/5]
+[14:23:26] [Server thread/INFO]: §e[SkNoise] §f§eAttempting to load addon classes §b[3/5]
+[14:23:26] [Server thread/INFO]: §e[SkNoise] §f§aLoaded skript classes §b[4/5]
+[14:23:26] [Server thread/INFO]: §e[SkNoise] §f§fPlugin loaded §b[5/5]
+[14:23:26] [Server thread/INFO]: [skript-yaml] Enabling skript-yaml v1.4
+[14:23:26] [Server thread/INFO]: [skRayFall] Enabling skRayFall v1.9.27
+[14:23:26] [Server thread/INFO]: [skRayFall] Yay! You are running skRayFall 1.9.27!
+[14:23:26] [Server thread/INFO]: [skRayFall] Nathan and Lewis <3 you.
+[14:23:26] [Server thread/INFO]: [skRayFall] Cooking Bacon...
+[14:23:26] [Server thread/INFO]: [skRayFall] Citizens not found! Sorry you cant make friends, but don't worry we will still be your friend <3
+[14:23:26] [Server thread/INFO]: [skRayFall] Got bacon for the EffectLib particle ninjas!
+[14:23:26] [Server thread/INFO]: [skRayFall] No Votifier Found! *Checks oven for finished bacon*
+[14:23:26] [Server thread/INFO]: [skRayFall] Enabling general 1.8+ bacon!
+[14:23:26] [Server thread/INFO]: [skRayFall] Getting the general 1.9+ bacon!
+[14:23:26] [Server thread/INFO]: [skRayFall] Getting the extra special 1.17+ bacon!
+[14:23:27] [Server thread/INFO]: [skRayFall] Bacon is ready!
+[14:23:27] [Server thread/INFO]: [WorldChangeScreenRemover] Enabling WorldChangeScreenRemover v1.0.18
+[14:23:27] [Server thread/INFO]: Running delayed init tasks
+[14:23:27] [Server thread/INFO]: [Skript] Loading variables...
+[14:23:27] [Server thread/INFO]: [Skript] Loaded 5 variables in 0.3 seconds
+[14:23:28] [Server thread/WARN]: [Skript] §6§lLine 34:§7 (Player\states\AuthState\Tick.sk)
+§e    Empty configuration section! You might want to indent one or more of the subsequent lines to make them belong to this section or remove the colon at the end of the line if you don't want this line to start a section.
+§6    Line: §7else if {_type} is "login":
+ §r
+[14:23:28] [Server thread/WARN]: [Skript] §6§lLine 25:§7 (Region\ClaimRegion.sk)
+§e    Empty configuration section! You might want to indent one or more of the subsequent lines to make them belong to this section or remove the colon at the end of the line if you don't want this line to start a section.
+§6    Line: §7{region::%{_check::bock}%::owner} is {_player}:
+ §r
+[14:23:28] [Server thread/WARN]: [Skript] 'Region\Logistics\Power.sk' is empty
+[14:23:31] [Server thread/ERROR]: #!#! 
+[14:23:31] [Server thread/ERROR]: #!#! [Skript] Severe Error:
+[14:23:31] [Server thread/ERROR]: #!#! 
+[14:23:31] [Server thread/ERROR]: #!#! Something went horribly wrong with Skript.
+[14:23:31] [Server thread/ERROR]: #!#! This issue is NOT your fault! You probably can't fix it yourself, either.
+[14:23:31] [Server thread/ERROR]: #!#! It looks like you are using some plugin(s) that alter how Skript works (addons).
+[14:23:31] [Server thread/ERROR]: #!#! Here is full list of them:
+[14:23:31] [Server thread/ERROR]: #!#! skRayFall v1.9.27 (https://sk.rayfall.net/) skript-reflect v2.3 (https://github.com/TPGamesNL/skript-reflect) SkriptJSON v1.0.0 SkBee v1.15.2 (https://github.com/ShaneBeee/SkBee) skript-yaml v1.4 skNoise v1.0 WebSKT v1.0-BETA.2 (tlatoani.us/webskt) 
+[14:23:31] [Server thread/ERROR]: #!#! We could not identify which of those are specially related, so this might also be Skript issue.
+[14:23:31] [Server thread/ERROR]: #!#! You should try disabling those plugins one by one, trying to find which one causes it.
+[14:23:31] [Server thread/ERROR]: #!#! If the error doesn't disappear even after disabling all listed plugins, it is probably Skript issue.
+[14:23:31] [Server thread/ERROR]: #!#! In that case, you will be given instruction on how should you report it.
+[14:23:31] [Server thread/ERROR]: #!#! On the other hand, if the error disappears when disabling some plugin, report it to author of that plugin.
+[14:23:31] [Server thread/ERROR]: #!#! Only if the author tells you to do so, report it to Skript's issue tracker.
+[14:23:31] [Server thread/ERROR]: #!#! 
+[14:23:31] [Server thread/ERROR]: #!#! Stack trace:
+[14:23:31] [Server thread/ERROR]: #!#! unacceptable code point ' ' (0x0) special characters are not allowed
+in "'string'", position 0
+[14:23:31] [Server thread/ERROR]: #!#!     at org.yaml.snakeyaml.reader.StreamReader.update(StreamReader.java:211)
+[14:23:31] [Server thread/ERROR]: #!#!     at org.yaml.snakeyaml.reader.StreamReader.ensureEnoughData(StreamReader.java:176)
+[14:23:31] [Server thread/ERROR]: #!#!     at org.yaml.snakeyaml.reader.StreamReader.ensureEnoughData(StreamReader.java:171)
+[14:23:31] [Server thread/ERROR]: #!#!     at org.yaml.snakeyaml.reader.StreamReader.peek(StreamReader.java:126)
+[14:23:31] [Server thread/ERROR]: #!#!     at org.yaml.snakeyaml.scanner.ScannerImpl.scanToNextToken(ScannerImpl.java:1218)
+[14:23:31] [Server thread/ERROR]: #!#!     at org.yaml.snakeyaml.scanner.ScannerImpl.fetchMoreTokens(ScannerImpl.java:329)
+[14:23:31] [Server thread/ERROR]: #!#!     at org.yaml.snakeyaml.scanner.ScannerImpl.checkToken(ScannerImpl.java:251)
+[14:23:31] [Server thread/ERROR]: #!#!     at org.yaml.snakeyaml.parser.ParserImpl$ParseImplicitDocumentStart.produce(ParserImpl.java:214)
+[14:23:31] [Server thread/ERROR]: #!#!     at org.yaml.snakeyaml.parser.ParserImpl.peekEvent(ParserImpl.java:166)
+[14:23:31] [Server thread/ERROR]: #!#!     at org.yaml.snakeyaml.parser.ParserImpl.checkEvent(ParserImpl.java:156)
+[14:23:31] [Server thread/ERROR]: #!#!     at org.yaml.snakeyaml.composer.Composer.getSingleNode(Composer.java:141)
+[14:23:31] [Server thread/ERROR]: #!#!     at org.yaml.snakeyaml.constructor.BaseConstructor.getSingleData(BaseConstructor.java:151)
+[14:23:31] [Server thread/ERROR]: #!#!     at org.yaml.snakeyaml.Yaml.loadFromReader(Yaml.java:491)
+[14:23:31] [Server thread/ERROR]: #!#!     at org.yaml.snakeyaml.Yaml.load(Yaml.java:416)
+[14:23:31] [Server thread/ERROR]: #!#!     at skript-yaml.jar//me.sashie.skriptyaml.utils.yaml.YAMLProcessor.load(YAMLProcessor.java:183)
+[14:23:31] [Server thread/ERROR]: #!#!     at skript-yaml.jar//me.sashie.skriptyaml.skript.EffLoadYaml.load(EffLoadYaml.java:99)
+[14:23:31] [Server thread/ERROR]: #!#!     at skript-yaml.jar//me.sashie.skriptyaml.skript.EffLoadYaml.execute(EffLoadYaml.java:67)
+[14:23:31] [Server thread/ERROR]: #!#!     at Skript.jar//ch.njol.skript.lang.Effect.run(Effect.java:51)
+[14:23:31] [Server thread/ERROR]: #!#!     at Skript.jar//ch.njol.skript.lang.TriggerItem.walk(TriggerItem.java:60)
+[14:23:31] [Server thread/ERROR]: #!#!     at Skript.jar//ch.njol.skript.lang.TriggerItem.walk(TriggerItem.java:88)
+[14:23:31] [Server thread/ERROR]: #!#!     at Skript.jar//ch.njol.skript.lang.Trigger.execute(Trigger.java:56)
+[14:23:31] [Server thread/ERROR]: #!#!     at Skript.jar//ch.njol.skript.events.EvtScript.runTrigger(EvtScript.java:88)
+[14:23:31] [Server thread/ERROR]: #!#!     at Skript.jar//ch.njol.skript.events.EvtScript.register(EvtScript.java:68)
+[14:23:31] [Server thread/ERROR]: #!#!     at Skript.jar//ch.njol.skript.ScriptLoader.lambda$loadScript$7(ScriptLoader.java:810)
+[14:23:31] [Server thread/ERROR]: #!#!     at Skript.jar//ch.njol.skript.ScriptLoader.loadScript(ScriptLoader.java:833)
+[14:23:31] [Server thread/ERROR]: #!#!     at Skript.jar//ch.njol.skript.ScriptLoader.lambda$loadScripts$4(ScriptLoader.java:525)
+[14:23:31] [Server thread/ERROR]: #!#!     at Skript.jar//ch.njol.skript.ScriptLoader.lambda$makeFuture$2(ScriptLoader.java:417)
+[14:23:31] [Server thread/ERROR]: #!#!     at Skript.jar//ch.njol.skript.ScriptLoader.makeFuture(ScriptLoader.java:433)
+[14:23:31] [Server thread/ERROR]: #!#!     at Skript.jar//ch.njol.skript.ScriptLoader.loadScripts(ScriptLoader.java:524)
+[14:23:31] [Server thread/ERROR]: #!#!     at Skript.jar//ch.njol.skript.ScriptLoader.loadScripts(ScriptLoader.java:468)
+[14:23:31] [Server thread/ERROR]: #!#!     at Skript.jar//ch.njol.skript.Skript$1.run(Skript.java:778)
+[14:23:31] [Server thread/ERROR]: #!#!     at org.bukkit.craftbukkit.v1_18_R2.scheduler.CraftTask.run(CraftTask.java:101)
+[14:23:31] [Server thread/ERROR]: #!#!     at org.bukkit.craftbukkit.v1_18_R2.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:483)
+[14:23:31] [Server thread/ERROR]: #!#!     at net.minecraft.server.MinecraftServer.w(MinecraftServer.java:1172)
+[14:23:31] [Server thread/ERROR]: #!#!     at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:315)
+[14:23:31] [Server thread/ERROR]: #!#!     at java.base/java.lang.Thread.run(Thread.java:833)
+[14:23:31] [Server thread/ERROR]: #!#! 
+[14:23:31] [Server thread/ERROR]: #!#! Version Information:
+[14:23:31] [Server thread/ERROR]: #!#!   Skript: 2.6.1 (latest)
+[14:23:31] [Server thread/ERROR]: #!#!     Flavor: skriptlang-github
+[14:23:31] [Server thread/ERROR]: #!#!     Date: 22:18:42.554713200
+[14:23:31] [Server thread/ERROR]: #!#!   Bukkit: 1.18.2-R0.1-SNAPSHOT
+[14:23:31] [Server thread/ERROR]: #!#!   Minecraft: 1.18.2
+[14:23:31] [Server thread/ERROR]: #!#!   Java: 17.0.3 (OpenJDK 64-Bit Server VM 17.0.3+7)
+[14:23:31] [Server thread/ERROR]: #!#!   OS: Windows 10 amd64 10.0
+[14:23:31] [Server thread/ERROR]: #!#! 
+[14:23:31] [Server thread/ERROR]: #!#! Server platform: Paper
+[14:23:31] [Server thread/ERROR]: #!#! 
+[14:23:31] [Server thread/ERROR]: #!#! Current node: null
+[14:23:31] [Server thread/ERROR]: #!#! Current item: [re]load yaml "plugins/MultiWorld/config.yml"
+[14:23:31] [Server thread/ERROR]: #!#! Current trigger: load (script load) (MultiWorld.sk, line 6)
+[14:23:31] [Server thread/ERROR]: #!#! 
+[14:23:31] [Server thread/ERROR]: #!#! Thread: Server thread
+[14:23:31] [Server thread/ERROR]: #!#! 
+[14:23:31] [Server thread/ERROR]: #!#! Language: english
+[14:23:31] [Server thread/ERROR]: #!#! Link parse mode: DISABLED
+[14:23:31] [Server thread/ERROR]: #!#! 
+[14:23:31] [Server thread/ERROR]: #!#! End of Error.
+[14:23:31] [Server thread/ERROR]: #!#! 
+[14:23:31] [Server thread/INFO]: [MultiWorld] x Enabled
+[14:23:33] [Server thread/WARN]: [Skript] §6§lLine 49:§7 (Websocket\actions\SendAction.sk)
+§e    Starting a variable's name with an expression is discouraged ({%{_response}%::isAuthorized}). You could prefix it with the script's name: {Websocket\actions\SendAction.%{_response}%::isAuthorized}
+§6    Line: §7broadcast "after delay %{%{_response}%::isAuthorized}%"
+ §r
+[14:23:33] [Server thread/WARN]: [Skript] §6§lLine 21:§7 (Websocket\clients\UsersService.sk)
+§e    a types.websocket cannot be saved, i.e. the contents of the variable {websocket::usersService} will be lost when the server stops.
+§6    Line: §7set {websocket::usersService} to new websocket "users-service" connected to uri "http://localhost:3001/"
+ §r
+[14:23:33] [Server thread/WARN]: [Skript] §6§lLine 18:§7 (Websocket\test.sk)
+§e    a types.websocket cannot be saved, i.e. the contents of the variable {websocket} will be lost when the server stops.
+§6    Line: §7set {websocket} to new websocket "test-client" connected to uri "http://localhost:3001/"
+ §r
+[14:23:33] [Server thread/INFO]: [Skript] All scripts loaded without errors.
+[14:23:33] [Server thread/INFO]: [Skript] Loaded 28 scripts with a total of 25 triggers and 7 commands in 5.9 seconds
+[14:23:34] [Server thread/INFO]: [Skript] Finished loading.
+[14:23:34] [Server thread/INFO]: [ViaVersion] ViaVersion detected server version: 1.18.2 (758)
+[14:23:34] [Server thread/INFO]: [ViaVersion] Finished mapping loading, shutting down loader executor!
+[14:23:34] [Server thread/INFO]: Done (70.568s)! For help, type "help"
+[14:23:34] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 6664ms or 133 ticks behind
+[14:23:34] [Server thread/INFO]: Timings Reset
+[14:23:35] [Server thread/ERROR]: [Skript] §7[§bSk§3Bee §cERROR§7] §cBound with id 'game--1-0' already exists, cannot overwrite!
+[14:23:35] [Server thread/ERROR]: [Skript] §7[§bSk§3Bee §cERROR§7] §cBound with id 'game--1--1' already exists, cannot overwrite!
+[14:23:35] [Server thread/INFO]: stop game worker
+[14:23:38] [Server thread/INFO]: [com.fastasyncworldedit.bukkit.listener.ChunkListener] [FAWE Tick Limiter] Detected and cancelled physics lag source at Location{world=CraftWorld{name=game},x=-30.0,y=-1.0,z=-6.0,pitch=0.0,yaw=0.0}
+[14:23:38] [Server thread/INFO]: error
+[14:23:38] [Server thread/INFO]: disconnected
+[14:24:35] [User Authenticator #1/INFO]: UUID of player julipup is 72964376-3fb8-3fc8-8c03-da9b5cabbd33
+[14:24:36] [Server thread/WARN]: [ProtocolLib] Loaded class me.zombie_striker.wcsr.MagicPacketHolder$3 from WorldChangeScreenRemover v1.0.18 which is not a depend or softdepend of this plugin.
+[14:24:37] [Server thread/INFO]: julipup[/127.0.0.1:63732] logged in with entity id 3 at ([lobby]-150.0, -18.0, 84.0)
+[14:24:45] [Server thread/INFO]: julipup issued server command: /register 12344321 12344321
+[14:24:46] [Server thread/INFO]: register
+[14:24:46] [Server thread/INFO]: register
+[14:24:52] [Server thread/INFO]: julipup issued server command: /state none
+[14:24:53] [Server thread/INFO]: julipup issued server command: /clear
+[14:24:53] [Server thread/INFO]: [julipup: Removed 1 items from player julipup]
+[14:24:54] [Server thread/INFO]: julipup issued server command: /gamemode creative
+[14:24:54] [Server thread/INFO]: [julipup: Set own game mode to Creative Mode]
+[14:28:57] [Server thread/INFO]: [Skript] Reloading all scripts in Region...
+[14:28:58] [Server thread/WARN]: §6§lLine 25:§7 (Region\ClaimRegion.sk)
+§e    Empty configuration section! You might want to indent one or more of the subsequent lines to make them belong to this section or remove the colon at the end of the line if you don't want this line to start a section.
+§6    Line: §7{region::%{_check::bock}%::owner} is {_player}:
+ §r
+[14:28:58] [Server thread/WARN]: 'Region\Logistics\Power.sk' is empty
+[14:28:58] [Server thread/INFO]: [Skript] Successfully reloaded 4 scripts in Region. (279ms)
+[14:29:03] [Server thread/INFO]: julipup issued server command: /state choosingColor
+[14:29:07] [Server thread/INFO]: julipup issued server command: /state playing
+[14:29:28] [Server thread/INFO]: julipup issued server command: /stop
+[14:29:28] [Server thread/INFO]: [julipup: Stopping the server]
+[14:29:28] [Server thread/INFO]: Stopping server
+[14:29:28] [Server thread/INFO]: [WorldChangeScreenRemover] Disabling WorldChangeScreenRemover v1.0.18
+[14:29:28] [Server thread/INFO]: [skRayFall] Disabling skRayFall v1.9.27
+[14:29:28] [Skript variable save thread/WARN]: [Skript] Cannot write variables to the database 'default' at sufficient speed; server performance may suffer and many variables will be lost if the server crashes. (this warning will be repeated at most once every 10 seconds)
+[14:29:28] [Skript variable save thread/ERROR]: [Skript] Skript cannot save any variables to the database 'default'. The server will hang and may crash if no more variables can be saved.
+[14:29:29] [Server thread/INFO]: [MultiWorld] x Disabled
+[14:29:29] [Server thread/INFO]: [skRayFall] Bacon has been eaten. Make some more soon!
+[14:29:29] [Server thread/INFO]: [skript-yaml] Disabling skript-yaml v1.4
+[14:29:29] [Server thread/INFO]: [skNoise] Disabling skNoise v1.0
+[14:29:29] [Server thread/INFO]: [ProtocolLib] Disabling ProtocolLib v4.8.0
+[14:29:29] [Server thread/INFO]: [ViaBackwards] Disabling ViaBackwards v4.2.1
+[14:29:29] [Server thread/INFO]: [WebSKT] Disabling WebSKT v1.0-BETA.2
+[14:29:29] [Server thread/INFO]: [WebSKT] Stopped all WebSocket servers (if any were open)
+[14:29:29] [Server thread/INFO]: [SkriptJSON] Disabling SkriptJSON v1.0.0
+[14:29:29] [Server thread/INFO]: [ViaVersion] Disabling ViaVersion v4.2.1
+[14:29:29] [Server thread/INFO]: [ViaVersion] ViaVersion is disabling, if this is a reload and you experience issues consider rebooting.
+[14:29:29] [Server thread/INFO]: [skript-reflect] Disabling skript-reflect v2.3
+[14:29:29] [Server thread/INFO]: [SkBee] Disabling SkBee v1.15.2
+[14:29:29] [Server thread/INFO]: [Skript] Disabling Skript v2.6.1
+[14:29:29] [Server thread/INFO]: [FastAsyncWorldEdit] Disabling FastAsyncWorldEdit v2.1.3-SNAPSHOT-168;210ee9f
+[14:29:29] [Server thread/INFO]: Unregistering com.sk89q.worldedit.bukkit.BukkitServerInterface from WorldEdit
+[14:29:29] [Server thread/INFO]: Saving players
+[14:29:29] [Server thread/INFO]: julipup lost connection: Server closed
+[14:29:29] [Server thread/INFO]: julipup left the game
+[14:29:29] [Server thread/INFO]: Saving worlds
+[14:29:32] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[14:29:37] [Server thread/INFO]: Saving chunks for level 'ServerLevel[lobby]'/minecraft:lobby
+[14:29:37] [Server thread/INFO]: Saving chunks for level 'ServerLevel[game]'/minecraft:game
+[14:29:37] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[14:29:37] [Server thread/INFO]: ThreadedAnvilChunkStorage (lobby): All chunks are saved
+[14:29:37] [Server thread/INFO]: ThreadedAnvilChunkStorage (game): All chunks are saved
+[14:29:37] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[14:29:41] [Server thread/INFO]: Flushing Chunk IO
+[14:29:41] [Server thread/INFO]: Closing Thread Pool

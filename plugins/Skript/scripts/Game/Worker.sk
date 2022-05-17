@@ -1,0 +1,20 @@
+function Game_startWorker():
+  while true is true:
+    # Worker action
+    if {game::action} is set:
+      set {_action} to {game::action}
+      delete {game::action}
+
+      if {_action} is "stop":
+        broadcast "stop game worker"
+
+        # Deleting variables
+        delete {game::*}
+
+        stop
+
+    # Variables
+    if {game::working} is not true:
+      set {game::working} to true
+
+    wait 1 tick

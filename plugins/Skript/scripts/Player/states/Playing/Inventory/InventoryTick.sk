@@ -1,0 +1,38 @@
+function PlayingState_inventoryTick(player: player):
+  # Getting player information
+  
+  # > Attack
+  add "attack" to {_controls::*}
+
+  set {_slot} to 4
+
+  loop size of {_controls::*} - 1 times:
+    reduce {_slot} by 2
+
+  loop size of {_controls::*} times:
+    add {_slot} to {_controlSlots::*}
+    add 2 to {_slot}
+
+  # CLearing items
+  loop numbers from 0 to 7:
+    {_controlSlots::*} doesn't contain loop-value
+    slot loop-value of {_player}'s inventory isn't air:
+      set slot loop-value of {_player}'s inventory to air
+
+  # Controls
+  loop {_controls::*}:
+    set {_slot} to first element of {_controlSlots::*}
+    remove {_slot} from {_controlSlots::*}
+
+    set slot {_slot} of {_player}'s inventory to PlayingState_inventory_getItem(loop-value)
+
+function PlayingState_inventory_getItem(item: string) :: item:
+  if {_item} is "attack":
+    set {_item} to wooden sword named "Захватить"
+    add "{ItemId:""attack""}" to item-nbt of {_item}
+  else if {_item} is "build":
+    set {_item} to player head named "Построить"
+  else if {_item} is "other":
+    set {_item} to player head named "Другое"
+
+  return {_item}

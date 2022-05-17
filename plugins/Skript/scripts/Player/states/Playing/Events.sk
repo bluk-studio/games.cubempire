@@ -1,0 +1,17 @@
+on damage of a player:
+  {player::%victim%::state} is "playing"
+  cancel event
+
+on hunger bar change:
+  {player::%player%::state} is "playing"
+  cancel event
+
+on right click:
+  if tag "ItemId" of item-nbt of player's held item is "attack":
+    set {_location} to location of target block
+    set {_location}'s y coordinate to 0
+
+    set {_type} to {block::%{_location}%::type}
+
+    if {_type} isn't "water":
+      Region_tryClaiming(player, {_location})

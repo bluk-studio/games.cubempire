@@ -1,0 +1,15 @@
+# === Skript's variable storage ===
+# Please do not modify this file manually!
+#
+# version: 2.6.1
+
+bossbar::julipup::created, boolean, 01
+game::action, string, 800473746F70
+player::julipup::choosedblock, itemstack, 810576616C756520804C76616C75653A0A20203D3D3A206F72672E62756B6B69742E696E76656E746F72792E4974656D537461636B0A2020763A20323937350A2020747970653A20424C55455F434F4E43524554450A
+player::julipup::regions::1, location, 8605776F726C6480FF0000000181046E616D6520800467616D650178093FE00000000000000179090000000000000000017A09C01A0000000000000570697463680800000000037961770800000000
+player::julipup::state, string, 8007706C6179696E67
+player::julipup::states::auth::register::password, string, 80083132333434333231
+player::julipup::states::auth::ticked, boolean, 01
+player::julipup::states::playing::ticked, boolean, 01
+websocket::usersservice::stop, boolean, 01
+

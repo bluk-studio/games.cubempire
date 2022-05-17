@@ -1,0 +1,9 @@
+function ChooseColorState_inventoryTick(player: player):
+  loop numbers from 0 to 7:
+    loop-value isn't 4
+    if slot loop-value of {_player}'s inventory isn't air:
+      set slot loop-value of {_player}'s inventory to air
+
+  set {_item} to player head named "Начать играть"
+  if slot 4 of {_player}'s inventory isn't {_item}:
+    set slot 4 of {_player}'s inventory to {_item}

@@ -1,0 +1,14 @@
+function ChooseColor_openMenu(player: player):
+  open a new chest inventory with 6 rows named "&fДля начала игры выберите цвет" to {_player}
+
+  # Different colors
+  set {_blocks::*} to Region_getAllBlocks()
+
+  set {_slot} to 0
+  loop {_blocks::*}:
+    set {_item} to loop-value
+    # add "{}" to item-nbt of {_item}
+
+    set slot {_slot} of {_player}'s current inventory to {_item}
+
+    add 1 to {_slot}

@@ -1,0 +1,34 @@
+function ChooseColor_tick(player: player):
+  if {player::%{_player}%::states::chooseColor::ticked} isn't true:
+    delete {player::%{_player}%::states::chooseColor::*}
+    set {player::%{_player}%::states::chooseColor::ticked} to true
+
+    # Teleporting player to spawn
+    set {_location} to location at -150, -18, 84 in world "lobby"
+    set {_location}'s yaw to -90
+    
+    teleport {_player} to {_location}
+    clear {_player}'s inventory
+
+  # Cleaner
+  if {player::%{_player}%::state} isn't "choosingColor":
+    delete {player::%{_player}%::states::chooseColor::*}
+
+  # Inventory tick
+  ChooseColorState_inventoryTick({_player})
+
+  # Gamemode
+  if {_player}'s gamemode isn't adventure:
+    set {_player}'s gamemode to adventure
+
+  # Revealing all players
+  reveal all players to {_player}
+
+on quit:
+  delete {player::%player%::states::chooseColor::*}
+
+# events
+on right click:
+  {player::%player%::state} is "choosingColor"
+  if name of player's held item contains "Начать играть":
+    ChooseColor_openMenu(player)

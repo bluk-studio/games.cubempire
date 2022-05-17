@@ -1,0 +1,62 @@
+options:
+  tile_x: 31
+  tile_z: 31
+
+function Generator_loadTile(x: number, z: number):
+  # Settings
+  # > game
+  set {_location} to spawn of "game" parsed as world
+  set y coordinate of {_location} to 0
+
+  {_location} is not set:
+    stop
+
+  # > for one tile
+  set {_dimensions::x} to {@tile_x}
+  set {_dimensions::z} to {@tile_z}
+
+  # Creating region for this tile
+  set {_location::1} to {_location}
+  add {_dimensions::x} * {_x} to x coordinate of {_location::1}
+  add {_dimensions::z} * {_z} to z coordinate of {_location::1}
+  set y coordinate of {_location::1} to -2
+
+  set {_location::2} to {_location}
+  add {_dimensions::x} * ({_x} + 1) to x coordinate of {_location::2}
+  add {_dimensions::z} * ({_z} + 1) to z coordinate of {_location::2}
+  set y coordinate of {_location::2} to 30
+  
+  create new bound with id "game-%{_x}%-%{_z}%" within {_location::1} and {_location::2}
+
+  # Generator
+  set {_generator} to Generator_get({game::seed})
+
+  set {_point::x} to {_dimensions::x} * {_x}
+  set {_point::z} to {_dimensions::z} * {_z}
+
+  # Generating values for this tile
+  loop {_dimensions::x} times:
+    loop {_dimensions::z} times:
+      # Generating absolute location
+      set {_location::absolute} to {_location}
+
+      add {_point::x} to x coordinate of {_location::absolute}
+      add {_point::z} to z coordinate of {_location::absolute}
+
+      set {_value} to value of {_generator} at {_point::x}, 0, {_point::z}
+      add {_value} to y coordinate of {_location::absolute}
+
+      # Setting block
+      Generator_setBlock({_location::absolute}, "%{_x}%-%{_z}%")
+
+      add 1 to {_point::z}
+
+    set {_point::z} to {_dimensions::z} * {_z}
+    add 1 to {_point::x}
+    
+    # Batcher
+    wait 1 tick
+
+command gen [<number>] [<number>]:
+  trigger:
+    Generator_loadTile(arg-1, arg-2)

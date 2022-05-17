@@ -1,0 +1,37 @@
+function PlayingState_tick(player: player):
+  # First tick
+  if {player::%{_player}%::states::playing::ticked} isn't true:
+    delete {player::%{_player}%::states::playing::*}
+    set {player::%{_player}%::states::playing::ticked} to true
+
+    # Teleport player to map
+    set {_location} to spawn of "game" parsed as world
+    set y coordinate of {_location} to 2
+    
+    teleport {_player} to {_location}
+
+  # Cleaner
+  if {player::%{_player}%::state} isn't "playing":
+    delete {player::%{_player}%::states::playing::*}
+
+  # Gamemode
+  if {_player}'s gamemode isn't adventure:
+    set {_player}'s gamemode to adventure
+
+  # Checking variables
+  if {player::%{_player}%::choosedBlock} is not set:
+    set {player::%{_player}%::choosedBlock} to Region_getAvailableBlock()
+
+  # broadcast "%{player::%{_player}%::choosedBlock}%"
+
+  # Inventory tick
+  PlayingState_inventoryTick({_player})
+
+  # Action bar tick
+  PlayingState_actionBar_tick({_player})
+
+  # Holograms tick
+
+# cleaner
+on quit:
+  delete {player::%player%::states::playing::*}

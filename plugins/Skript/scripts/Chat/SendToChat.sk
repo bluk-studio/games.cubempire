@@ -1,0 +1,4 @@
+function Chat_send(message: string):
+  loop all players:
+    if {player::%loop-player%::state} is "inLobby" or "playing":
+      send "%{_message}%" to loop-player

@@ -1,0 +1,38 @@
+websocket client "users-service":
+  on open:
+    broadcast "websocket connected!"
+  on message:
+    # Parsing json
+    map json from event-string to {_json::*}
+
+    # Saving response
+    loop {_json::response::*}:
+      set {websocket::usersService::%{_json::id}%::response::%loop-index%} to loop-value
+  
+  on error:
+    broadcast "error"
+  on close:
+    broadcast "disconnected"
+
+on script load:
+  wait 2 seconds
+
+  # Starting this client
+  set {websocket::usersService} to new websocket "users-service" connected to uri "http://localhost:3001/"
+
+  # Starting worker
+  # while true is true:
+  #   if {websocket::usersService::stop} is true:
+  #     stop
+
+  #   # Checking websocket state
+
+  #   wait 1 tick
+
+on script unload:
+  set {websocket::usersService::stop} to true
+  wait 1 tick
+  
+  # Stopping this client
+  close websocket {websocket::usersService}
+  delete {websocket::usersService::*}

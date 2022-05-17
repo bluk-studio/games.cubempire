@@ -1,0 +1,18 @@
+websocket client "test-client":
+  on open:
+    broadcast "sending test action..."
+
+    set {_json::function} to "createAuthToken"
+    set {_json::arguments::*} to "juiipup"
+
+    set {_json} to json form of {_json::*}
+
+    websocket send "%{_json}%"
+  on error:
+    broadcast "websocket error"
+  on message:
+    broadcast "received message: %event-string%"
+
+command websocket:
+  trigger:
+    set {websocket} to new websocket "test-client" connected to uri "http://localhost:3001/"

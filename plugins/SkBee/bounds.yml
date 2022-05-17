@@ -1,0 +1,40 @@
+# This file will save all bounds
+
+updated_18_heights: true
+bounds:
+  game--1-0:
+    ==: com.shanebeestudios.skbee.elements.bound.objects.Bound
+    world: game
+    x1: -31
+    y1: -2
+    z1: 0
+    x2: 0
+    y2: 30
+    z2: 31
+    id: game--1-0
+    owners: []
+    members: []
+  game--1--1:
+    ==: com.shanebeestudios.skbee.elements.bound.objects.Bound
+    world: game
+    x1: -31
+    y1: -2
+    z1: -31
+    x2: 0
+    y2: 30
+    z2: 0
+    id: game--1--1
+    owners: []
+    members: []
+  game-0--1:
+    ==: com.shanebeestudios.skbee.elements.bound.objects.Bound
+    world: game
+    x1: 0
+    y1: -2
+    z1: -31
+    x2: 31
+    y2: 30
+    z2: 0
+    id: game-0--1
+    owners: []
+    members: []

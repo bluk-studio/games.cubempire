@@ -1,0 +1,13 @@
+worlds:
+  lobby:
+    type: FLAT
+    environment: NORMAL
+    seed: 4694914649220096022
+    structures: false
+    hardcore: false
+  game:
+    type: FLAT
+    environment: NORMAL
+    seed: -6344904988298527717
+    structures: true
+    hardcore: false

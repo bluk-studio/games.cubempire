@@ -1,0 +1,14 @@
+function PlayingState_actionBar_tick(player: player):
+  # Getting information about current player's region
+  set {_location} to location of block at {_player}
+  set {_location}'s y coordinate to 0
+
+  if {region::%{_location}%} is set:
+    set {_owner} to {region::%{_location}%::owner}
+    if {_owner} is {_player}:
+      send action bar "Ваша земля, милорд" to {_player}
+    else:
+      send action bar "Вражейская земля" to {_player}
+  else:
+    # No region
+    send action bar "Ничейная земля" to {_player}
